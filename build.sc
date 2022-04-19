@@ -61,7 +61,6 @@ object Upickle386 extends ScalaModule {
 
    def scalacOptions = Seq[String](
     "-Xmax-inlines:128", // 64 solves the problem up to some point, 128 gets stack overflow
-
   )
   
   def ivyDeps = Agg {
@@ -70,10 +69,10 @@ object Upickle386 extends ScalaModule {
 
   def scalaVersion = "3.1.1"
 
-  def dependsOn = generator
+  //def dependsOn = generator
 
   //def additionalSources = T.sources { os.Path(generator(size).generate) }
-  override def allSources = super.allSources()
+  //override def allSources = super.allSources()
  
 
   //def dependsOn = generator(size).generate
